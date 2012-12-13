@@ -18,7 +18,7 @@ require('clarify');
 throw new Error("custom error");
 ```
 
-Without the `trace` the error output is:
+Without `clarify` the error output is:
 
 ```
 /Users/Andreas/Sites/node_modules/clarify/test.js:2
@@ -34,7 +34,7 @@ Error: test
     at process.startup.processNextTick.process._tickCallback (node.js:244:9)
 ```
 
-With the `clarify` the error output is:
+With `clarify` the error output is:
 
 ```
 /Users/Andreas/Sites/node_modules/clarify/test.js:2
