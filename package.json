@@ -19,14 +19,10 @@
     "error"
   ],
   "dependencies": {
-    "stack-chain": "0.2.x"
+    "stack-chain": "1.0.x"
   },
   "devDependencies": {
-    "tap": "0.3.x"
+    "tap": "0.4.x"
   },
-  "license": "MIT",
-  "engines": {
-    "node": "0.8",
-    "npm": "1"
-  }
+  "license": "MIT"
 }
