@@ -14,11 +14,12 @@ test("node internal call sites should be ignored", function (t) {
 });
 
 test("no filename dosn't break", function (t) {
+  process.nextTick(function () {
+    var err = null;
+    eval("err = new Error('trace');");
+    var lines = err.stack.split('\n');
 
-  var err = null;
-  eval("err = new Error('trace');");
-  var lines = err.stack.split('\n');
-
-  t.equal(lines.length, 2);
-  t.end();
+    t.equal(lines.length, 2);
+    t.end();
+  });
 });
