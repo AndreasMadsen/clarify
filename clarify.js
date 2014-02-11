@@ -7,6 +7,7 @@ var chain = require('stack-chain');
 
 chain.filter.attach(function (error, frames) {
   return frames.filter(function (callSite) {
-    return (callSite.getFileName()[0] === '/');
+    var name = callSite && callSite.getFileName();
+    return (name && name[0] === '/');
   });
 });
