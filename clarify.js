@@ -4,10 +4,11 @@
  */
 
 var chain = require('stack-chain');
+var sep = require('path').sep;
 
 chain.filter.attach(function (error, frames) {
   return frames.filter(function (callSite) {
     var name = callSite && callSite.getFileName();
-    return (name && name[0] === '/');
+    return (name && name.indexOf(sep) !== -1);
   });
 });
