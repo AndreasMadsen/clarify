@@ -1,7 +1,7 @@
 {
   "name": "clarify",
   "description": "Remove nodecore related stack trace noice",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Andreas Madsen <amwebdk@gmail.com>",
   "main": "./clarify.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "error"
   ],
   "dependencies": {
-    "stack-chain": "1.0.x"
+    "stack-chain": "1.1.x"
   },
   "devDependencies": {
     "tap": "0.4.x"
