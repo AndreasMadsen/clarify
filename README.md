@@ -1,6 +1,6 @@
 #clarify [![Build Status](https://secure.travis-ci.org/AndreasMadsen/clarify.png)](http://travis-ci.org/AndreasMadsen/clarify)
 
-> Remove nodecore related stack trace noice
+> Remove nodecore related stack trace noise
 
 ## Installation
 
