@@ -1,5 +1,6 @@
+'use strict';
 
-var test = require("tap").test;
+const test = require("tap").test;
 
 require('./clarify.js');
 

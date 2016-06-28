@@ -1,14 +1,11 @@
-/**
- * Copyright (c) 2012 Andreas Madsen
- * MIT License
- */
+'use strict';
 
-var chain = require('stack-chain');
-var sep = require('path').sep;
+const chain = require('stack-chain');
+const sep = require('path').sep;
 
 chain.filter.attach(function (error, frames) {
   return frames.filter(function (callSite) {
-    var name = callSite && callSite.getFileName();
-    return (name && name.indexOf(sep) !== -1);
+    const name = callSite && callSite.getFileName();
+    return (name && name.includes(sep) && !name.startsWith('internal'));
   });
 });
