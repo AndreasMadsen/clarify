@@ -52,6 +52,17 @@ To active require `clarify`.
   require('clarify');
 ```
 
+
+## Important gotcha
+
+If you are using clarify with a module to increase the size of the stacktrace such as trace or superstack), make sure you require it before clarify. i.e.
+```JavaScript
+  require('trace');
+  require('clarify');
+```
+Node will throw a "RangeError: Maximum call stack size exceeded" error if you try to require a stacktrace enhancer.after clarify.
+
+
 ## License
 
 **The software is license under "MIT"**
