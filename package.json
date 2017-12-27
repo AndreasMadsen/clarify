@@ -1,7 +1,7 @@
 {
   "name": "clarify",
   "description": "Remove nodecore related stack trace noise",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "author": "Andreas Madsen <amwebdk@gmail.com>",
   "main": "./clarify.js",
   "scripts": {
@@ -19,11 +19,11 @@
     "error"
   ],
   "dependencies": {
-    "stack-chain": "1.3.x"
+    "stack-chain": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "2.13.x",
-    "tap": "5.8.x"
+    "eslint": "^2.13.0",
+    "tap": "^11.0.0"
   },
   "license": "MIT",
   "engines": {
