@@ -2,4 +2,5 @@
 /node_modules/
 /test/temp/
 npm-debug.log
-
+package-lock.json
+.tap/
